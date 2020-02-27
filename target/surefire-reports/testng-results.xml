@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LoginAndPurchaseTest" duration-ms="18954" started-at="2020-02-26T23:57:19Z" finished-at="2020-02-26T23:57:38Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="18954" started-at="2020-02-26T23:57:19Z" finished-at="2020-02-26T23:57:38Z">
+      <class name="LoginAndPurchaseTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:LoginAndPurchaseTest@7c30a502]" name="preCondition" is-config="true" duration-ms="15577" started-at="2020-02-26T20:57:19Z" finished-at="2020-02-26T20:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="login()[pri:0, instance:LoginAndPurchaseTest@7c30a502]" name="login" duration-ms="2352" started-at="2020-02-26T20:57:34Z" finished-at="2020-02-26T20:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="posCondition()[pri:0, instance:LoginAndPurchaseTest@7c30a502]" name="posCondition" is-config="true" duration-ms="957" started-at="2020-02-26T20:57:37Z" finished-at="2020-02-26T20:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- posCondition -->
+      </class> <!-- LoginAndPurchaseTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- LoginAndPurchaseTest -->
+</testng-results>

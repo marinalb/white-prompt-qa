@@ -7,25 +7,30 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Util {
-    public static String retornaValor(String propriedade){
-        String retorno = null;
+    public static String returnValue(String property){
+        String returnProperty = null;
 
         Properties properties = new Properties();
         try{
             properties.load(new FileInputStream("src/main/java/conf.properties"));
-            retorno = properties.getProperty(propriedade);
+            returnProperty = properties.getProperty(property);
         } catch (IOException e){
             e.printStackTrace();
         }
-        return retorno;
+        return returnProperty;
     }
 
-    public static WebDriver retornaBrowser(String browser) throws Exception {
+    public static WebDriver returnBrowser(String browser) {
         WebDriver driver = null;
 
-        System.setProperty("webdriver.chrome.driver", retornaValor("driver.chrome"));
-        driver = new ChromeDriver();
+        if (getOperatingSystem().contains("Windows")){
+            System.setProperty("webdriver.chrome.driver", returnValue("driver.chrome"));
+            driver = new ChromeDriver();
+        } else if (getOperatingSystem().contains("mac")){
+            System.setProperty("webdriver.chrome.driver", returnValue("driver.chrome.mac"));
+            driver = new ChromeDriver();
 
+        }
         return driver;
     }
 
@@ -34,7 +39,4 @@ public class Util {
         System.out.println("System: " + os);
         return os;
     }
-
-
-
 }

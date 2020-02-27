@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
     private final WebDriver driver;
 
-
     public LoginPage(WebDriver driver){
         this.driver = driver;
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -17,12 +16,10 @@ public class LoginPage {
 
     public void findUser(String user){
         driver.findElement(By.id("user-name")).sendKeys(user);
-        //TakeSnapShot.takeSnapShot(driver, this.getClass().getName());
     }
 
     public void findPass(String password){
         driver.findElement(By.id("password")).sendKeys(password);
-        //TakeSnapShot.takeSnapShot(driver, this.getClass().getName());
     }
 
     public void clickAccess(){
@@ -33,11 +30,6 @@ public class LoginPage {
         findUser(user);
         findPass(password);
         clickAccess();
-       // TakeSnapShot.takeSnapShot(driver, this.getClass().getName());
-
         return true;
-
     }
-
-
 }
