@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-This project includes both UI and API tests in order to make easier and simple, they're separated in two packages inside test folder and can be runned separated. 
+This project includes both UI and API tests in order to keep easier and simple, they're separated in two packages inside test folder and can be runned separated. 
 
 ### Prerequisites
 
