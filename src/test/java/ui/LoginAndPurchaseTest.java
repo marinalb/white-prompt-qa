@@ -22,19 +22,19 @@ public class LoginAndPurchaseTest {
     }
 
     @Test
-    public void login(){
+    public void loginAndPurchase(){
         LoginPage login = new LoginPage(driver);
         Assert.assertTrue(login.loginAccess("standard_user", "secret_sauce"), "Login Failed");
 
         PurchasePage purchase = new PurchasePage(driver);
-        Assert.assertNotNull(purchase.addCart());
+        Assert.assertTrue(purchase.addCart());
 
         CheckoutPage checkout = new CheckoutPage(driver);
-        checkout.checkout();
+        Assert.assertTrue(checkout.checkoutAndContinue());
 
         OverviewPage overview = new OverviewPage(driver);
         overview.clickFinishButton();
-
+        Assert.assertNotNull(overview.waitFinished());
     }
 
     @AfterTest

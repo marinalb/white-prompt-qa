@@ -10,7 +10,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver){
         this.driver = driver;
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 2);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("user-name")));
     }
 

@@ -12,7 +12,7 @@ public class CheckoutPage {
 
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 2);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("first-name")));
     }
 
@@ -35,13 +35,12 @@ public class CheckoutPage {
         driver.findElement(By.cssSelector("#checkout_info_container > div > form > div.checkout_buttons > input")).click();
     }
 
-    public Boolean checkout(){
+    public Boolean checkoutAndContinue(){
         inputFirstUserName();
         inputLastUserName();
         inputZipCode();
         clickContinueButton();
         return true;
-
     }
 
 }
