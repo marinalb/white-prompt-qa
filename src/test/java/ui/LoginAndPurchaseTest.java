@@ -1,3 +1,5 @@
+package ui;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -13,14 +15,14 @@ public class LoginAndPurchaseTest {
     private WebDriver driver;
 
     @BeforeTest
-    public void preCondition() throws Exception{
+    public void preCondition() {
         driver = Util.returnBrowser(Util.returnValue(("browser")));
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
     }
 
     @AfterTest
-    public void posCondition(){
+    public void tearDown(){
         driver.quit();
     }
 

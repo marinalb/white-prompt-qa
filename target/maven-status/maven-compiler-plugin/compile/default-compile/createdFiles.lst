@@ -1,3 +1,5 @@
-pageobject\PurchasePage.class
 util\Util.class
+pageobject\PurchasePage.class
+pageobject\CheckoutPage.class
+pageobject\OverviewPage.class
 pageobject\LoginPage.class

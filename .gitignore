@@ -6,6 +6,7 @@ out/
 
 # Package Files #
 *.jar
+*.iml
 *.war
 *.ear
 */target/**

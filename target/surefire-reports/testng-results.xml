@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="LoginAndPurchaseTest" duration-ms="18954" started-at="2020-02-26T23:57:19Z" finished-at="2020-02-26T23:57:38Z">
+  <suite name="Command line suite" duration-ms="30582" started-at="2020-02-28T01:31:45Z" finished-at="2020-02-28T01:32:16Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="18954" started-at="2020-02-26T23:57:19Z" finished-at="2020-02-26T23:57:38Z">
-      <class name="LoginAndPurchaseTest">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:LoginAndPurchaseTest@7c30a502]" name="preCondition" is-config="true" duration-ms="15577" started-at="2020-02-26T20:57:19Z" finished-at="2020-02-26T20:57:34Z">
+    <test name="Command line test" duration-ms="30582" started-at="2020-02-28T01:31:45Z" finished-at="2020-02-28T01:32:16Z">
+      <class name="ui.LoginAndPurchaseTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:ui.LoginAndPurchaseTest@60f82f98]" name="preCondition" is-config="true" duration-ms="15149" started-at="2020-02-27T22:31:45Z" finished-at="2020-02-27T22:32:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="login()[pri:0, instance:LoginAndPurchaseTest@7c30a502]" name="login" duration-ms="2352" started-at="2020-02-26T20:57:34Z" finished-at="2020-02-26T20:57:37Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:ui.LoginAndPurchaseTest@60f82f98]" name="login" duration-ms="4777" started-at="2020-02-27T22:32:10Z" finished-at="2020-02-27T22:32:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="posCondition()[pri:0, instance:LoginAndPurchaseTest@7c30a502]" name="posCondition" is-config="true" duration-ms="957" started-at="2020-02-26T20:57:37Z" finished-at="2020-02-26T20:57:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ui.LoginAndPurchaseTest@60f82f98]" name="tearDown" is-config="true" duration-ms="1003" started-at="2020-02-27T22:32:15Z" finished-at="2020-02-27T22:32:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- posCondition -->
-      </class> <!-- LoginAndPurchaseTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.LoginAndPurchaseTest -->
+      <class name="api.WeatherApiTest">
+        <test-method status="PASS" signature="apiResponseTest()[pri:0, instance:api.WeatherApiTest@35f983a6]" name="apiResponseTest" duration-ms="4750" started-at="2020-02-27T22:32:00Z" finished-at="2020-02-27T22:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiResponseTest -->
+        <test-method status="PASS" signature="locationResponseTest()[pri:0, instance:api.WeatherApiTest@35f983a6]" name="locationResponseTest" duration-ms="2339" started-at="2020-02-27T22:32:05Z" finished-at="2020-02-27T22:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locationResponseTest -->
+        <test-method status="PASS" signature="weatherNotNullTest()[pri:0, instance:api.WeatherApiTest@35f983a6]" name="weatherNotNullTest" duration-ms="2487" started-at="2020-02-27T22:32:08Z" finished-at="2020-02-27T22:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weatherNotNullTest -->
+      </class> <!-- api.WeatherApiTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- LoginAndPurchaseTest -->
+  </suite> <!-- Command line suite -->
 </testng-results>
