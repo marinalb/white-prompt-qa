@@ -1,15 +1,19 @@
 # Automation Architecture
 
-Describe in words or diagram how you would integrate the above scripts into a CI/CD environment. 
-These can include integration with Cloud Based services or locally and describe why the choices made.
+*How you would integrate the scripts into a CI/CD environment. 
+These can include integration with Cloud Based services or locally and describe why the choices made.*
 
 
 ### Why Pipeline on Jenkins: ###
 
-- Is well know that Jenkins is the most popular tool for CI/CD and also is highly customizable, this project would perfectly fits on a Jenkins pipeline using a well developed Jenkinsfile that would manage both API and UI tests, in order to run in different nodes. To improve this, 
+- Is well know that Jenkins is the most popular tool for CI/CD and also is highly customizable, this project contains Java and Maven so would perfectly fits on a Jenkins pipeline using a well developed Jenkinsfile that would do a checkout on GitHub, manage both API and UI tests in order to run in different nodes, and also to improve this 
 would be add a feature to setup cron time jobs in order to schedule tests. 
  
- - If its needed could be add parameters, to escalated the variety of test cases. 
+ Things nice to add:
+ 
+ - Could be add parameters, to escalated the variety of test cases. 
+ - There is a lot of incredible report plugins that is valuable (Allure is great)
+ - Manage on Jenkinsfile script to send email alerts is any job fails 
 
 
 ### Why Cloud Based: ###
