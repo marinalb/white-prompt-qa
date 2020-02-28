@@ -18,12 +18,12 @@ would be add a feature to setup cron time jobs in order to schedule tests.
 
 ### Why Cloud Based: ###
 
-- Considering that we already have our Jenkins - master - up an running, lets face this scenario: if you want to add some tests in the flow, this can become quite a huge infrastructure, and also hard to maintain. To provide a modern, and scalable solution for that, Kubernetes would be my chooise: Jenkins can run tasks on different agent nodes while kube-plugin enable the possibility to create these nodes dynamically. 
+- Considering that we already have our Jenkins - master - up an running, lets face this scenario: if you want to add some tests in the flow, this can become quite a huge infrastructure, and also hard to maintain. To provide a modern, and scalable solution for that, Kubernetes would be my choice: Jenkins can run tasks on different agent nodes while kube-plugin enable the possibility to create these nodes dynamically and also Run many build plans in parallel.
 
-- And the awnsome part: an agent node is created only for the task execution and deleted afterwards, so a pod (one or more container) execute a unique task limited in time, which means: the container go up do this job and then get down, without no need to maintain an infrastructure idle.
+- And the awesome part: an agent node is created only for the task execution and deleted afterwards, so a pod (one or more container) execute a unique task limited in time, which means: the container go up do this job and then get down, without no need to maintain an infrastructure idle.
+
+- A nice & smoothly infrastructure draft: first we have our Jenkins Master (with all the plugins needed installed: git, reports, K8S), and this can be easily scalable using on Jenkins Slaves configuration.
 
 
-##### A very simplified diagram with my idea #####
-
-
+##### A very simplified diagram draft with my idea #####
 
