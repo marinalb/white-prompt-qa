@@ -21,18 +21,13 @@ public class LoginAndPurchaseTest {
         driver.manage().window().maximize();
     }
 
-    @AfterTest
-    public void tearDown(){
-        driver.quit();
-    }
-
     @Test
     public void login(){
         LoginPage login = new LoginPage(driver);
         Assert.assertTrue(login.loginAccess("standard_user", "secret_sauce"), "Login Failed");
 
         PurchasePage purchase = new PurchasePage(driver);
-        purchase.addCart();
+        Assert.assertNotNull(purchase.addCart());
 
         CheckoutPage checkout = new CheckoutPage(driver);
         checkout.checkout();
@@ -40,5 +35,10 @@ public class LoginAndPurchaseTest {
         OverviewPage overview = new OverviewPage(driver);
         overview.clickFinishButton();
 
+    }
+
+    @AfterTest
+    public void tearDown(){
+        driver.quit();
     }
 }
